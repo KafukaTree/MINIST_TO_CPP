@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Agent\QWEN3CODER\handwriting_recognizer_opencv\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Agent\QWEN3CODER\handwriting_recognizer_opencv\drawing_canvas.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Agent\QWEN3CODER\handwriting_recognizer_opencv\torch_model.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Agent\QWEN3CODER\handwriting_recognizer_opencv\drawing_canvas.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Agent\QWEN3CODER\handwriting_recognizer_opencv\torch_model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Agent\QWEN3CODER\handwriting_recognizer_opencv\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{AFBFB0BF-3215-3F5B-990B-14B60E555F10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{CF71A328-E2F5-39DA-A562-F4ED87878B86}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

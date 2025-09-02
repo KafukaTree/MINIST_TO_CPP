@@ -1,0 +1,413 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DE6521C4-5AF0-339B-8933-E23F0D321026}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>handwriting_recognizer_opencv</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Agent\QWEN3CODER\handwriting_recognizer_opencv\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">handwriting_recognizer_opencv.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">handwriting_recognizer_opencv</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Agent\QWEN3CODER\handwriting_recognizer_opencv\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">handwriting_recognizer_opencv.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">handwriting_recognizer_opencv</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Agent\QWEN3CODER\handwriting_recognizer_opencv\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">handwriting_recognizer_opencv.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">handwriting_recognizer_opencv</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Agent\QWEN3CODER\handwriting_recognizer_opencv\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">handwriting_recognizer_opencv.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">handwriting_recognizer_opencv</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Agent\QWEN3CODER\handwriting_recognizer_opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/opencv/build/include" /external:I "D:/dl_torch/libtorch/include" /external:I "D:/dl_torch/libtorch/include/torch/csrc/api/include" /d2implyavx512upperregs- /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;USE_DISTRIBUTED;USE_C10D_GLOO;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;USE_DISTRIBUTED;USE_C10D_GLOO;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Agent\QWEN3CODER\handwriting_recognizer_opencv;D:\opencv\build\include;D:\dl_torch\libtorch\include;D:\dl_torch\libtorch\include\torch\csrc\api\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Agent\QWEN3CODER\handwriting_recognizer_opencv;D:\opencv\build\include;D:\dl_torch\libtorch\include;D:\dl_torch\libtorch\include\torch\csrc\api\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/dl_torch/libtorch/lib/asmjit.dll D:/dl_torch/libtorch/lib/c10.dll D:/dl_torch/libtorch/lib/fbgemm.dll D:/dl_torch/libtorch/lib/libiomp5md.dll D:/dl_torch/libtorch/lib/libiompstubs5md.dll D:/dl_torch/libtorch/lib/torch.dll D:/dl_torch/libtorch/lib/torch_cpu.dll D:/dl_torch/libtorch/lib/torch_global_deps.dll D:/dl_torch/libtorch/lib/uv.dll D:/Agent/QWEN3CODER/handwriting_recognizer_opencv/bin/Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\opencv\build\x64\vc16\lib\opencv_world4120d.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120d.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120d.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120d.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120d.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120d.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120d.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120d.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120d.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120d.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120d.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120d.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120d.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120d.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120d.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120d.lib;D:\dl_torch\libtorch\lib\c10.lib;D:\dl_torch\libtorch\lib\kineto.lib;D:\dl_torch\libtorch\lib\torch.lib;D:\dl_torch\libtorch\lib\torch_cpu.lib;D:\dl_torch\libtorch\lib\c10.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>/lib;/lib/$(Configuration);/lib/intel64;/lib/intel64/$(Configuration);/lib/intel64_win;/lib/intel64_win/$(Configuration);/lib/win-x64;/lib/win-x64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Agent/QWEN3CODER/handwriting_recognizer_opencv/Debug/handwriting_recognizer_opencv.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Agent/QWEN3CODER/handwriting_recognizer_opencv/bin/Debug/handwriting_recognizer_opencv.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Agent\QWEN3CODER\handwriting_recognizer_opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/opencv/build/include" /external:I "D:/dl_torch/libtorch/include" /external:I "D:/dl_torch/libtorch/include/torch/csrc/api/include" /d2implyavx512upperregs- /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ConformanceMode>true</ConformanceMode>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USE_DISTRIBUTED;USE_C10D_GLOO;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USE_DISTRIBUTED;USE_C10D_GLOO;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Agent\QWEN3CODER\handwriting_recognizer_opencv;D:\opencv\build\include;D:\dl_torch\libtorch\include;D:\dl_torch\libtorch\include\torch\csrc\api\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Agent\QWEN3CODER\handwriting_recognizer_opencv;D:\opencv\build\include;D:\dl_torch\libtorch\include;D:\dl_torch\libtorch\include\torch\csrc\api\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/dl_torch/libtorch/lib/asmjit.dll D:/dl_torch/libtorch/lib/c10.dll D:/dl_torch/libtorch/lib/fbgemm.dll D:/dl_torch/libtorch/lib/libiomp5md.dll D:/dl_torch/libtorch/lib/libiompstubs5md.dll D:/dl_torch/libtorch/lib/torch.dll D:/dl_torch/libtorch/lib/torch_cpu.dll D:/dl_torch/libtorch/lib/torch_global_deps.dll D:/dl_torch/libtorch/lib/uv.dll D:/Agent/QWEN3CODER/handwriting_recognizer_opencv/bin/Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\dl_torch\libtorch\lib\c10.lib;D:\dl_torch\libtorch\lib\kineto.lib;D:\dl_torch\libtorch\lib\torch.lib;D:\dl_torch\libtorch\lib\torch_cpu.lib;D:\dl_torch\libtorch\lib\c10.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>/lib;/lib/$(Configuration);/lib/intel64;/lib/intel64/$(Configuration);/lib/intel64_win;/lib/intel64_win/$(Configuration);/lib/win-x64;/lib/win-x64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Agent/QWEN3CODER/handwriting_recognizer_opencv/Release/handwriting_recognizer_opencv.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Agent/QWEN3CODER/handwriting_recognizer_opencv/bin/Release/handwriting_recognizer_opencv.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Agent\QWEN3CODER\handwriting_recognizer_opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/opencv/build/include" /external:I "D:/dl_torch/libtorch/include" /external:I "D:/dl_torch/libtorch/include/torch/csrc/api/include" /d2implyavx512upperregs- /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ConformanceMode>true</ConformanceMode>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USE_DISTRIBUTED;USE_C10D_GLOO;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USE_DISTRIBUTED;USE_C10D_GLOO;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Agent\QWEN3CODER\handwriting_recognizer_opencv;D:\opencv\build\include;D:\dl_torch\libtorch\include;D:\dl_torch\libtorch\include\torch\csrc\api\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Agent\QWEN3CODER\handwriting_recognizer_opencv;D:\opencv\build\include;D:\dl_torch\libtorch\include;D:\dl_torch\libtorch\include\torch\csrc\api\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/dl_torch/libtorch/lib/asmjit.dll D:/dl_torch/libtorch/lib/c10.dll D:/dl_torch/libtorch/lib/fbgemm.dll D:/dl_torch/libtorch/lib/libiomp5md.dll D:/dl_torch/libtorch/lib/libiompstubs5md.dll D:/dl_torch/libtorch/lib/torch.dll D:/dl_torch/libtorch/lib/torch_cpu.dll D:/dl_torch/libtorch/lib/torch_global_deps.dll D:/dl_torch/libtorch/lib/uv.dll D:/Agent/QWEN3CODER/handwriting_recognizer_opencv/bin/MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\dl_torch\libtorch\lib\c10.lib;D:\dl_torch\libtorch\lib\kineto.lib;D:\dl_torch\libtorch\lib\torch.lib;D:\dl_torch\libtorch\lib\torch_cpu.lib;D:\dl_torch\libtorch\lib\c10.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>/lib;/lib/$(Configuration);/lib/intel64;/lib/intel64/$(Configuration);/lib/intel64_win;/lib/intel64_win/$(Configuration);/lib/win-x64;/lib/win-x64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Agent/QWEN3CODER/handwriting_recognizer_opencv/MinSizeRel/handwriting_recognizer_opencv.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Agent/QWEN3CODER/handwriting_recognizer_opencv/bin/MinSizeRel/handwriting_recognizer_opencv.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Agent\QWEN3CODER\handwriting_recognizer_opencv;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/opencv/build/include" /external:I "D:/dl_torch/libtorch/include" /external:I "D:/dl_torch/libtorch/include/torch/csrc/api/include" /d2implyavx512upperregs- /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ConformanceMode>true</ConformanceMode>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USE_DISTRIBUTED;USE_C10D_GLOO;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USE_DISTRIBUTED;USE_C10D_GLOO;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Agent\QWEN3CODER\handwriting_recognizer_opencv;D:\opencv\build\include;D:\dl_torch\libtorch\include;D:\dl_torch\libtorch\include\torch\csrc\api\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Agent\QWEN3CODER\handwriting_recognizer_opencv;D:\opencv\build\include;D:\dl_torch\libtorch\include;D:\dl_torch\libtorch\include\torch\csrc\api\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different D:/dl_torch/libtorch/lib/asmjit.dll D:/dl_torch/libtorch/lib/c10.dll D:/dl_torch/libtorch/lib/fbgemm.dll D:/dl_torch/libtorch/lib/libiomp5md.dll D:/dl_torch/libtorch/lib/libiompstubs5md.dll D:/dl_torch/libtorch/lib/torch.dll D:/dl_torch/libtorch/lib/torch_cpu.dll D:/dl_torch/libtorch/lib/torch_global_deps.dll D:/dl_torch/libtorch/lib/uv.dll D:/Agent/QWEN3CODER/handwriting_recognizer_opencv/bin/RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\opencv\build\x64\vc16\lib\opencv_world4120.lib;D:\dl_torch\libtorch\lib\c10.lib;D:\dl_torch\libtorch\lib\kineto.lib;D:\dl_torch\libtorch\lib\torch.lib;D:\dl_torch\libtorch\lib\torch_cpu.lib;D:\dl_torch\libtorch\lib\c10.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>/lib;/lib/$(Configuration);/lib/intel64;/lib/intel64/$(Configuration);/lib/intel64_win;/lib/intel64_win/$(Configuration);/lib/win-x64;/lib/win-x64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Agent/QWEN3CODER/handwriting_recognizer_opencv/RelWithDebInfo/handwriting_recognizer_opencv.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Agent/QWEN3CODER/handwriting_recognizer_opencv/bin/RelWithDebInfo/handwriting_recognizer_opencv.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Agent\QWEN3CODER\handwriting_recognizer_opencv\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Agent/QWEN3CODER/handwriting_recognizer_opencv/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Agent/QWEN3CODER/handwriting_recognizer_opencv -BD:/Agent/QWEN3CODER/handwriting_recognizer_opencv --check-stamp-file D:/Agent/QWEN3CODER/handwriting_recognizer_opencv/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;D:\Agent\QWEN3CODER\handwriting_recognizer_opencv\CMakeFiles\4.0.2\CMakeCCompiler.cmake;D:\Agent\QWEN3CODER\handwriting_recognizer_opencv\CMakeFiles\4.0.2\CMakeCXXCompiler.cmake;D:\Agent\QWEN3CODER\handwriting_recognizer_opencv\CMakeFiles\4.0.2\CMakeRCCompiler.cmake;D:\Agent\QWEN3CODER\handwriting_recognizer_opencv\CMakeFiles\4.0.2\CMakeSystem.cmake;D:\dl_torch\libtorch\share\cmake\Caffe2\Caffe2Config.cmake;D:\dl_torch\libtorch\share\cmake\Caffe2\Caffe2Targets-release.cmake;D:\dl_torch\libtorch\share\cmake\Caffe2\Caffe2Targets.cmake;D:\dl_torch\libtorch\share\cmake\Caffe2\public\mkl.cmake;D:\dl_torch\libtorch\share\cmake\Caffe2\public\mkldnn.cmake;D:\dl_torch\libtorch\share\cmake\Caffe2\public\utils.cmake;D:\dl_torch\libtorch\share\cmake\Torch\TorchConfig.cmake;D:\dl_torch\libtorch\share\cmake\Torch\TorchConfigVersion.cmake;D:\opencv\build\OpenCVConfig-version.cmake;D:\opencv\build\OpenCVConfig.cmake;D:\opencv\build\x64\vc16\lib\OpenCVConfig.cmake;D:\opencv\build\x64\vc16\lib\OpenCVModules-debug.cmake;D:\opencv\build\x64\vc16\lib\OpenCVModules-release.cmake;D:\opencv\build\x64\vc16\lib\OpenCVModules.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Agent\QWEN3CODER\handwriting_recognizer_opencv\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Agent/QWEN3CODER/handwriting_recognizer_opencv/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Agent/QWEN3CODER/handwriting_recognizer_opencv -BD:/Agent/QWEN3CODER/handwriting_recognizer_opencv --check-stamp-file D:/Agent/QWEN3CODER/handwriting_recognizer_opencv/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;D:\Agent\QWEN3CODER\handwriting_recognizer_opencv\CMakeFiles\4.0.2\CMakeCCompiler.cmake;D:\Agent\QWEN3CODER\handwriting_recognizer_opencv\CMakeFiles\4.0.2\CMakeCXXCompiler.cmake;D:\Agent\QWEN3CODER\handwriting_recognizer_opencv\CMakeFiles\4.0.2\CMakeRCCompiler.cmake;D:\Agent\QWEN3CODER\handwriting_recognizer_opencv\CMakeFiles\4.0.2\CMakeSystem.cmake;D:\dl_torch\libtorch\share\cmake\Caffe2\Caffe2Config.cmake;D:\dl_torch\libtorch\share\cmake\Caffe2\Caffe2Targets-release.cmake;D:\dl_torch\libtorch\share\cmake\Caffe2\Caffe2Targets.cmake;D:\dl_torch\libtorch\share\cmake\Caffe2\public\mkl.cmake;D:\dl_torch\libtorch\share\cmake\Caffe2\public\mkldnn.cmake;D:\dl_torch\libtorch\share\cmake\Caffe2\public\utils.cmake;D:\dl_torch\libtorch\share\cmake\Torch\TorchConfig.cmake;D:\dl_torch\libtorch\share\cmake\Torch\TorchConfigVersion.cmake;D:\opencv\build\OpenCVConfig-version.cmake;D:\opencv\build\OpenCVConfig.cmake;D:\opencv\build\x64\vc16\lib\OpenCVConfig.cmake;D:\opencv\build\x64\vc16\lib\OpenCVModules-debug.cmake;D:\opencv\build\x64\vc16\lib\OpenCVModules-release.cmake;D:\opencv\build\x64\vc16\lib\OpenCVModules.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Agent\QWEN3CODER\handwriting_recognizer_opencv\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Agent/QWEN3CODER/handwriting_recognizer_opencv/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Agent/QWEN3CODER/handwriting_recognizer_opencv -BD:/Agent/QWEN3CODER/handwriting_recognizer_opencv --check-stamp-file D:/Agent/QWEN3CODER/handwriting_recognizer_opencv/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;D:\Agent\QWEN3CODER\handwriting_recognizer_opencv\CMakeFiles\4.0.2\CMakeCCompiler.cmake;D:\Agent\QWEN3CODER\handwriting_recognizer_opencv\CMakeFiles\4.0.2\CMakeCXXCompiler.cmake;D:\Agent\QWEN3CODER\handwriting_recognizer_opencv\CMakeFiles\4.0.2\CMakeRCCompiler.cmake;D:\Agent\QWEN3CODER\handwriting_recognizer_opencv\CMakeFiles\4.0.2\CMakeSystem.cmake;D:\dl_torch\libtorch\share\cmake\Caffe2\Caffe2Config.cmake;D:\dl_torch\libtorch\share\cmake\Caffe2\Caffe2Targets-release.cmake;D:\dl_torch\libtorch\share\cmake\Caffe2\Caffe2Targets.cmake;D:\dl_torch\libtorch\share\cmake\Caffe2\public\mkl.cmake;D:\dl_torch\libtorch\share\cmake\Caffe2\public\mkldnn.cmake;D:\dl_torch\libtorch\share\cmake\Caffe2\public\utils.cmake;D:\dl_torch\libtorch\share\cmake\Torch\TorchConfig.cmake;D:\dl_torch\libtorch\share\cmake\Torch\TorchConfigVersion.cmake;D:\opencv\build\OpenCVConfig-version.cmake;D:\opencv\build\OpenCVConfig.cmake;D:\opencv\build\x64\vc16\lib\OpenCVConfig.cmake;D:\opencv\build\x64\vc16\lib\OpenCVModules-debug.cmake;D:\opencv\build\x64\vc16\lib\OpenCVModules-release.cmake;D:\opencv\build\x64\vc16\lib\OpenCVModules.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Agent\QWEN3CODER\handwriting_recognizer_opencv\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Agent/QWEN3CODER/handwriting_recognizer_opencv/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Agent/QWEN3CODER/handwriting_recognizer_opencv -BD:/Agent/QWEN3CODER/handwriting_recognizer_opencv --check-stamp-file D:/Agent/QWEN3CODER/handwriting_recognizer_opencv/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.0\Modules\Platform\WindowsPaths.cmake;D:\Agent\QWEN3CODER\handwriting_recognizer_opencv\CMakeFiles\4.0.2\CMakeCCompiler.cmake;D:\Agent\QWEN3CODER\handwriting_recognizer_opencv\CMakeFiles\4.0.2\CMakeCXXCompiler.cmake;D:\Agent\QWEN3CODER\handwriting_recognizer_opencv\CMakeFiles\4.0.2\CMakeRCCompiler.cmake;D:\Agent\QWEN3CODER\handwriting_recognizer_opencv\CMakeFiles\4.0.2\CMakeSystem.cmake;D:\dl_torch\libtorch\share\cmake\Caffe2\Caffe2Config.cmake;D:\dl_torch\libtorch\share\cmake\Caffe2\Caffe2Targets-release.cmake;D:\dl_torch\libtorch\share\cmake\Caffe2\Caffe2Targets.cmake;D:\dl_torch\libtorch\share\cmake\Caffe2\public\mkl.cmake;D:\dl_torch\libtorch\share\cmake\Caffe2\public\mkldnn.cmake;D:\dl_torch\libtorch\share\cmake\Caffe2\public\utils.cmake;D:\dl_torch\libtorch\share\cmake\Torch\TorchConfig.cmake;D:\dl_torch\libtorch\share\cmake\Torch\TorchConfigVersion.cmake;D:\opencv\build\OpenCVConfig-version.cmake;D:\opencv\build\OpenCVConfig.cmake;D:\opencv\build\x64\vc16\lib\OpenCVConfig.cmake;D:\opencv\build\x64\vc16\lib\OpenCVModules-debug.cmake;D:\opencv\build\x64\vc16\lib\OpenCVModules-release.cmake;D:\opencv\build\x64\vc16\lib\OpenCVModules.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Agent\QWEN3CODER\handwriting_recognizer_opencv\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\Agent\QWEN3CODER\handwriting_recognizer_opencv\main.cpp" />
+    <ClCompile Include="D:\Agent\QWEN3CODER\handwriting_recognizer_opencv\drawing_canvas.cpp" />
+    <ClCompile Include="D:\Agent\QWEN3CODER\handwriting_recognizer_opencv\torch_model.cpp" />
+    <ClInclude Include="D:\Agent\QWEN3CODER\handwriting_recognizer_opencv\drawing_canvas.h" />
+    <ClInclude Include="D:\Agent\QWEN3CODER\handwriting_recognizer_opencv\torch_model.h" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\Agent\QWEN3CODER\handwriting_recognizer_opencv\ZERO_CHECK.vcxproj">
+      <Project>{65FFF740-4808-309D-9FDB-7544725F66F9}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

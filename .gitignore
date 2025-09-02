@@ -1,0 +1,20 @@
+# Build outputs
+/bin/
+/lib/
+/build/
+/out/
+/Derive/
+
+# Binaries
+*.dll
+*.exe
+*.so
+*.dylib
+*.lib
+*.pdb
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile

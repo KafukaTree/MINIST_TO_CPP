@@ -1,0 +1,6 @@
+torch>=1.7.0
+torchvision>=0.8.0
+# GUI应用使用tkinter（Python标准库，无需额外安装）
+# matplotlib用于可视化（可选）
+matplotlib>=3.3.0
+numpy>=1.19.0

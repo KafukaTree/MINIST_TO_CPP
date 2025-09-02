@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Agent\QWEN3CODER\handwriting_recognizer_opencv\CMakeFiles\780c297422713fbb2106cc2d786cb206\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{BF3BBBA7-F183-381B-BC05-B34EEB277BFE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
