@@ -4,8 +4,7 @@
 
 ## 效果展示
 
-<video src="show.mp4" controls></video>
-
+![描述文字](./show.gif)
 
 ## 项目结构
 
@@ -78,3 +77,10 @@
 - 轻量级部署：不依赖 Python 环境
 - 快速推理：利用 LibTorch 优化的推理引擎
 - 跨平台：可在 Windows、Linux 和 macOS 上运行
+
+<pre><div class="foldable-highlight"><pre><code class="markdown hljs">![一个有趣的GIF](https://example.com/animation.gif)
+</code></pre></div></pre>
+
+
+<pre><div class="foldable-highlight"><pre><code class="markdown hljs">![一个有趣的GIF](https://example.com/animation.gif)
+</code></pre></div></pre>
