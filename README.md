@@ -2,6 +2,11 @@
 
 这是一个使用 LibTorch (PyTorch C++ API) 实现的轻量级部署方案，用于识别手写数字图像。
 
+## 效果展示
+
+<video src="show.mp4" controls></video>
+
+
 ## 项目结构
 
 ```
@@ -25,24 +30,25 @@
 ## 构建步骤
 
 1. 下载并安装 LibTorch:
+
    - 访问 [PyTorch 官网](https://pytorch.org/get-started/locally/) 下载 LibTorch
    - 解压到合适的位置，例如 `C:\libtorch`
-
 2. 安装 OpenCV:
-   - 下载并安装 OpenCV 或使用包管理器安装
 
+   - 下载并安装 OpenCV 或使用包管理器安装
 3. 创建构建目录并进入:
+
    ```bash
    mkdir build
    cd build
    ```
-
 4. 配置 CMake (Windows 示例):
+
    ```bash
    cmake -DCMAKE_PREFIX_PATH=C:\libtorch ..  # 替换为你的 LibTorch 路径
    ```
-
 5. 构建项目:
+
    ```bash
    cmake --build . --config Release
    ```
